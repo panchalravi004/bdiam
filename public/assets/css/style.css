@@ -4995,6 +4995,15 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-brand {
     color: #fff;
+    background: linear-gradient(90deg, #2d6bb380, #0e3f7981);
+    padding: 0px 20px;
+    border-radius: 25px;
+    border: 2px solid #80fde71f;
+}
+
+.navbar-dark .navbar-brand i{
+    font-size: 17px;
+    opacity: 0.8;
 }
 
 .navbar-dark .navbar-brand:hover,
@@ -10233,7 +10242,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-    color: #fd5f00 !important;
+    color: #0075c3 !important;
 }
 
 a.text-primary:hover,
@@ -10869,6 +10878,10 @@ header .search-form .form-control {
     visibility: visible;
 }
 
+.inner-page {
+    border-radius: 0px 0px 5px 5px;
+    overflow: hidden;    
+}
 .home-slider.home-slider.inner-page .slider-item {
     position: relative;
     z-index: 10;
@@ -11015,12 +11028,12 @@ header .search-form .form-control {
     margin-left: 0.5em;
 }
 
-.slider-item .slider-text h1 span {
+/* .slider-item .slider-text h1 span {
     color: white;
     background-color: #fd5f00;
     -webkit-box-shadow: 0.5em 0 0 #fd5f00, -0.5em 0 0 #fd5f00;
     box-shadow: 0.5em 0 0 #fd5f00, -0.5em 0 0 #fd5f00;
-}
+} */
 
 @media (max-width: 991.98px) {
     .slider-item .slider-text h1 {
@@ -11346,6 +11359,7 @@ header .search-form .form-control {
     position: relative;
     overflow: hidden;
     text-align: center;
+    height: 100%;
 }
 
 @media (max-width: 991.98px) {
@@ -11359,6 +11373,8 @@ header .search-form .form-control {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
+    height: 100%;
+    object-fit: cover;
 }
 
 .link-thumbnail .date {
@@ -11833,12 +11849,15 @@ header .search-form .form-control {
 .scaling-image {
     width: 100%;
     display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .scaling-image:hover .frame {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
+    /* box-shadow: 0px 0px 5px gray; */
 }
 
 .scaling-image:hover img,
@@ -11846,4 +11865,9 @@ header .search-form .form-control {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.feature-card{
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 }

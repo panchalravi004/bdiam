@@ -4,7 +4,7 @@ function Contact() {
     return (
         <>
             <div class="inner-page">
-                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/industrial_hero_3.jpg")})` }}>
+                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-2.jpg")})` }}>
 
                     <div className="container">
                         <div className="row slider-text align-items-center justify-content-center">

@@ -16,7 +16,10 @@ function Header() {
         <header role="banner">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand " href="index.html">B DIAM</a>
+                    <a className="navbar-brand " href="index.html">
+                        <i className="fa-solid fa-gem"></i>
+                        &nbsp;BDIAM
+                    </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
