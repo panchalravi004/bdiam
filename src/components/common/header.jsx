@@ -1,22 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Header() {
-    // const [isScrolled, setIsScrolled] = useState(false);
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    //         setIsScrolled(scrollTop > 0);
-    //     };
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
+    const [isScrolled, setIsScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            setIsScrolled(scrollTop > 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <header role="banner">
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <header role="banner" className={`${isScrolled ? 'not-scrolled' : ''}`}>
+            {/* {`navbar navbar-expand-lg  fixed-top ${isScrolled ? 'navbar-light bg-light not-scrolled' : 'navbar-dark bg-dark scrolled'} `} */}
+            {/* "navbar navbar-expand-lg navbar-dark bg-dark" */}
+            <nav className={`navbar navbar-expand-lg ${isScrolled ? 'navbar-light bg-light' : 'navbar-dark bg-dark'} `}>
                 <div className="container-fluid">
-                    <a className="navbar-brand " href="index.html">
+                    <a className="navbar-brand " href="/">
                         <i className="fa-solid fa-gem"></i>
                         &nbsp;BDIAM
                     </a>

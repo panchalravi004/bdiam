@@ -28,7 +28,7 @@ function Home() {
                         <img src={require("../assets/images/diamon-vector/diamond-gift.png")} style={{opacity:"0.9"}} alt='' />
                         <span className='font-weight-bold'>Selection of Presents</span>
                     </div>
-                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center my-5">
                         <img src={require("../assets/images/diamon-vector/diamond.png")} style={{opacity:"0.9"}} alt='' />
                         <span className='font-weight-bold'>Diamond Selections</span>
                     </div>
@@ -104,8 +104,8 @@ function Home() {
                             <div className="media block-6 d-block text-center">
                                 <div className="icon mb-3"><span className="ion-android-notifications text-primary"></span></div>
                                 <div className="media-body">
-                                    <h3 className="heading">Modern Design</h3>
-                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                                    <h3 className="heading">Precise Pricing</h3>
+                                    <p>Dive into the intricacies of diamond pricing with our exploration of Price Per mm.</p>
                                 </div>
                             </div>
 
@@ -114,8 +114,8 @@ function Home() {
                             <div className="media block-6 d-block text-center">
                                 <div className="icon mb-3"><span className="ion-heart text-primary"></span></div>
                                 <div className="media-body">
-                                    <h3 className="heading">Built With Passion</h3>
-                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                                    <h3 className="heading">Bespoke Brilliance</h3>
+                                    <p>Explore the world of personalized diamond production with our bespoke services.</p>
                                 </div>
                             </div>
 
@@ -124,8 +124,8 @@ function Home() {
                             <div className="media block-6 d-block text-center">
                                 <div className="icon mb-3"><span className="ion-flash text-primary"></span></div>
                                 <div className="media-body">
-                                    <h3 className="heading">Fast Loading</h3>
-                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                                    <h3 className="heading">Enveloping And Fluting</h3>
+                                    <p>Delve into the artistry of diamond design with our discussion on Enveloping And Fluting.</p>
                                 </div>
                             </div>
 

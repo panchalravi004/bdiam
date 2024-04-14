@@ -14,13 +14,17 @@ function Footer() {
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-md-4 mb-5">
-                        <h3>About The Industrial</h3>
-                        <p className="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. .</p>
+                        <h3>Retailers Preferred Choice Across The Globe</h3>
+                        <p className="mb-5">
+                            Our Company is highly regraded as the preferred
+                            choice of renowned jewelers & manufacturers around 
+                            the world as a result of the excellency portrayed in our work.
+                        </p>
                         <ul className="list-unstyled footer-link d-flex footer-social">
-                            <li><a href="/" className="p-2"><span className="fa fa-twitter"></span></a></li>
-                            <li><a href="/" className="p-2"><span className="fa fa-facebook"></span></a></li>
-                            <li><a href="/" className="p-2"><span className="fa fa-linkedin"></span></a></li>
-                            <li><a href="/" className="p-2"><span className="fa fa-instagram"></span></a></li>
+                            <li><a href="/" className="p-2"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="/" className="p-2"><i className="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="/" className="p-2"><i className="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="/" className="p-2"><i className="fa-brands fa-instagram"></i></a></li>
                         </ul>
 
                     </div>
