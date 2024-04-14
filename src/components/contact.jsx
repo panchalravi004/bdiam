@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             <div class="inner-page">
-                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-6.jpg")})` }}>
+                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-7.jpg")})` }}>
 
                     <div className="container">
                         <div className="row slider-text align-items-center justify-content-center">
@@ -82,18 +88,20 @@ function Contact() {
                 </div>
             </section>
 
-            <div className='container mb-4' style={{ height: "400px", borderRadius: '5px' }}>
-                <iframe
-                    title="map-1"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4298819448836!2d72.60311062452872!3d23.00798312018827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c5f056745d%3A0xcfe5c6932fd679fa!2sKamla%20Nehru%20Zoo!5e0!3m2!1sen!2sin!4v1712853548264!5m2!1sen!2sin"
-                    style={{ border: 0, width: '100%', height: '100%', borderRadius: '10px' }}
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </div>
+            <ScrollAnimation animateIn="fadeIn">
+                <div className='container mb-4' style={{ height: "400px", borderRadius: '5px' }}>
+                    <iframe
+                        title="map-1"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4298819448836!2d72.60311062452872!3d23.00798312018827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c5f056745d%3A0xcfe5c6932fd679fa!2sKamla%20Nehru%20Zoo!5e0!3m2!1sen!2sin!4v1712853548264!5m2!1sen!2sin"
+                        style={{ border: 0, width: '100%', height: '100%', borderRadius: '10px' }}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </ScrollAnimation>
 
-            <section className="section " style={{background:"#033267"}}>
+            <section className="section " style={{ backgroundImage: `url(${require("../assets/images/banner/banner-9.jpg")})`, backgroundSize:'cover', boxShadow:'inset 0px 0px 300px #000000' }}>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-8">

@@ -6,7 +6,7 @@ function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            setIsScrolled(scrollTop > 0);
+            setIsScrolled(scrollTop > 10);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
