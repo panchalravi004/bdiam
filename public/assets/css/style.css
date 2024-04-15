@@ -10888,10 +10888,10 @@ header .search-form .form-control {
     visibility: visible;
 }
 
-.inner-page {
+/* .inner-page {
     border-radius: 0px 0px 5px 5px;
     overflow: hidden;    
-}
+} */
 .home-slider.home-slider.inner-page .slider-item {
     position: relative;
     z-index: 10;
@@ -11891,4 +11891,48 @@ header.not-scrolled .navbar {
 }
 header.scrolled {
     background-color: #141414c7 !important;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    visibility: hidden;
+}
+.carousel-indicators button{
+    width: 5px;
+    height: 5px;
+    border: none;
+    outline: none;
+    margin: 2px;
+    border-radius: 50px;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    border: none;
+    outline: none;
+}
+
+.service-slide-over-image{
+    width:400px;
+    position:absolute;
+    right:0 ;
+    bottom:-60px;
+    border-radius:8px;
+    border:4px solid white
+}
+.service-card-image{
+    width: 100%;
+    height: 300px;
+    object-fit:cover; 
+    border-radius:10px
+}
+@media (max-width: 991.98px){
+    .service-slide-over-image{
+        width: 250px;
+        right: 15px;
+    }
+    
 }

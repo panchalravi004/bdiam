@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import Carousel from 'react-bootstrap/Carousel';
 
 function About() {
     useEffect(() => {
@@ -8,17 +9,18 @@ function About() {
 
     return (
         <>
-            <div class="inner-page">
-                <div class="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-10.jpg")})` }}>
+            <div className="inner-page">
+                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-10.jpg")})` }}>
 
-                    <div class="container">
-                        <div class="row slider-text align-items-center justify-content-center">
-                            <div class="col-md-8 text-center col-sm-12 pt-5">
-                                <h1 class="pt-5"><span>About Us</span></h1>
-                                <p class="mb-5 w-75" style={{textAlign:'justify'}}>
-                                    At BDIAM, we are more than just a diamond manufacturing company – we are purveyors of timeless elegance and unparalleled craftsmanship. With decades of experience in the industry, we have honed our expertise to deliver diamonds of exceptional quality and beauty to our discerning clientele.
+                    <div className="container" >
+                        <div className="row slider-text align-items-center justify-content-center">
+                            <div className="col-md-8 text-center col-sm-12 pt-5">
+                                <h1 className="pt-5" style={{textAlign:"start", marginLeft:"unset"}}><span>About Us</span></h1>
+                                <p className="mb-5 w-75" style={{margin:"unset", textAlign:"start"}}>
+                                    At BDIAM, we are more than just a diamond manufacturing company – we are purveyors of timeless elegance and unparalleled craftsmanship. With decades of experience in the industry.
                                 </p>
                             </div>
+                            <div className="col-md-4 col-sm-12 pt-5"></div>
                         </div>
                     </div>
 
@@ -27,35 +29,33 @@ function About() {
 
             <section className='container py-2'>
                 
-                <ScrollAnimation animateIn="fadeIn">
-                    <div class="half d-lg-flex d-block my-5">
-                        <div class="image" data-animate-effect="fadeIn" style={{ backgroundImage: `url(${require("../assets/images/feature-images/diamond-12.jpg")})` , borderRadius:'15px'}}></div>
-                        <div class="text text-center">
-                            <h3 class="mb-4">Our Mission</h3>
-                            <p class="mb-5" style={{textAlign:'justify'}}>
-                                At BDIAM, our mission is simple yet profound – to redefine the standards of excellence in the diamond industry. We are driven by a passion for innovation, a commitment to quality, and a dedication to customer satisfaction.
-                                <br/>
-                                <br/>
-                                Our mission encompasses every aspect of our business, from sourcing ethically and sustainably mined diamonds to employing the latest technological advancements in our manufacturing processes.
-                            </p>
-                            {/* <p><a href="/" class="btn btn-primary btn-sm px-3 py-2">Learn More</a></p> */}
-                        </div>
+                <div className="half d-lg-flex d-block my-5">
+                    <div className="image" data-animate-effect="fadeIn" style={{ backgroundImage: `url(${require("../assets/images/feature-images/diamond-12.jpg")})` , borderRadius:'15px'}}></div>
+                    <div className="text text-center">
+                        <h3 className="mb-4">Our Mission</h3>
+                        <p className="mb-5" style={{textAlign:'justify'}}>
+                            At BDIAM, our mission is simple yet profound – to redefine the standards of excellence in the diamond industry. We are driven by a passion for innovation, a commitment to quality, and a dedication to customer satisfaction.
+                            <br/>
+                            <br/>
+                            Our mission encompasses every aspect of our business, from sourcing ethically and sustainably mined diamonds to employing the latest technological advancements in our manufacturing processes.
+                        </p>
+                        {/* <p><a href="/" className="btn btn-primary btn-sm px-3 py-2">Learn More</a></p> */}
                     </div>
-                </ScrollAnimation>
-
+                </div>
+                
                 <ScrollAnimation animateIn="fadeIn">
-                    <div class="half d-lg-flex d-block my-5">
-                        <div class="image order-2" data-animate-effect="fadeIn" style={{ backgroundImage: `url(${require("../assets/images/feature-images/diamond-13.jpg")})` , borderRadius:'15px' }}></div>
-                        <div class="text text-center">
-                            <h3 class="mb-4">Company History</h3>
-                            <p class="mb-5" style={{textAlign:'justify'}}>
+                    <div className="half d-lg-flex d-block my-5">
+                        <div className="image order-2" data-animate-effect="fadeIn" style={{ backgroundImage: `url(${require("../assets/images/feature-images/diamond-13.jpg")})` , borderRadius:'15px' }}></div>
+                        <div className="text text-center">
+                            <h3 className="mb-4">Company History</h3>
+                            <p className="mb-5" style={{textAlign:'justify'}}>
                                 BDIAM's journey began decades ago with a vision to create diamonds of unparalleled beauty and quality. Founded by pioneers in the diamond industry, our company quickly earned a reputation for excellence and innovation.
                                 <br/>
                                 <br/>
                                 From our humble beginnings as a small workshop, we have grown into a global leader in diamond manufacturing, with state-of-the-art facilities and a team of skilled artisans dedicated to perfecting their craft.
                             </p>
 
-                            {/* <p><a href="/" class="btn btn-primary btn-sm px-3 py-2">Learn More</a></p> */}
+                            {/* <p><a href="/" className="btn btn-primary btn-sm px-3 py-2">Learn More</a></p> */}
                         </div>
                     </div>
                 </ScrollAnimation>
@@ -76,6 +76,64 @@ function About() {
                     </div>
                 </section>
             </ScrollAnimation>
+
+            <div className="container mt-5">
+                <img src={require("../assets/images/feature-images/diamond-19.png")} className='col-lg-4 mt-2 col-12' style={{height:'450px', objectFit:'cover', borderRadius:'12px'}} alt="" srcSet="" />
+                <img src={require("../assets/images/feature-images/diamond-20.png")} className='col-lg-4 mt-2 col-12' style={{height:'450px', objectFit:'cover', borderRadius:'12px'}} alt="" srcSet="" />
+                <img src={require("../assets/images/feature-images/diamond-21.jpg")} className='col-lg-4 mt-2 col-12' style={{height:'450px', objectFit:'cover', borderRadius:'12px'}} alt="" srcSet="" />
+
+                <div className='col-12 d-flex flex-column justify-content-center align-items-center mt-4 '>
+                    <h4 style={{color:"#5c5c5c"}}>Our Success Is Measured By Positive Impact.</h4>
+                    <p>
+                        At BDiam, success is not just measured in carats, but in the brilliance of stories we craft, the trust we earn, and the enduring joy our diamonds bring to life’s most precious moments. It’s a journey where precision meets passion, and each radiant gem becomes a chapter in the stories we help create.
+                    </p>
+                </div>
+            </div>
+
+
+            <div className="container col-lg-8 col-12 mt-5">
+                <Carousel>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-1.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-2.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-3.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-4.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-5.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-6.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-7.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-8.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-9.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-10.png")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-11.jpg")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-12.jpg")} alt='First slide' />
+                    </Carousel.Item>
+                </Carousel>
+
+                
+            </div>
+
         </>
     )
 }

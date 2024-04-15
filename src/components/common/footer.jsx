@@ -21,7 +21,7 @@ function Footer() {
                             the world as a result of the excellency portrayed in our work.
                         </p>
                         <ul className="list-unstyled footer-link d-flex footer-social">
-                            <li><a href="/" className="p-2"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="/" className="p-2"><i className="fa-brands fa-twitter"></i></a></li>
                             <li><a href="/" className="p-2"><i className="fa-brands fa-facebook"></i></a></li>
                             <li><a href="/" className="p-2"><i className="fa-brands fa-linkedin"></i></a></li>
                             <li><a href="/" className="p-2"><i className="fa-brands fa-instagram"></i></a></li>
