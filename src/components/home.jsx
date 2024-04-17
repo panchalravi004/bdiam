@@ -203,42 +203,42 @@ function Home() {
                     <div class="container-fluid">
                         <div class="row no-gutters">
                             <div class="col-md-4 p-3">
-                                <a href="project-single.html" class="link-thumbnail">
+                                <a href="/" class="link-thumbnail">
                                     <h3>Dynamic Solitaire</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-4.jpeg")} alt="Diamond" class="img-fluid rounded" />
                                 </a>
                             </div>
                             <div class="col-md-4 p-3">
-                                <a href="project-single.html" class="link-thumbnail">
+                                <a href="/" class="link-thumbnail">
                                     <h3>Ethereal Halo</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-18.jpg")} alt="Diamond" class="img-fluid rounded" />
                                 </a>
                             </div>
                             <div class="col-md-4 p-3">
-                                <a href="project-single.html" class="link-thumbnail">
+                                <a href="/" class="link-thumbnail">
                                     <h3>Cascade of Brilliance</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-7.jpg")} alt="Diamond" class="img-fluid rounded" />
                                 </a>
                             </div>
                             <div class="col-md-4 p-3">
-                                <a href="project-single.html" class="link-thumbnail">
+                                <a href="/" class="link-thumbnail">
                                     <h3>Contemporary Cluster</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-15.jpg")} alt="Diamond" class="img-fluid rounded" />
                                 </a>
                             </div>
                             <div class="col-md-4 p-3">
-                                <a href="project-single.html" class="link-thumbnail">
+                                <a href="/" class="link-thumbnail">
                                     <h3>Sculptural Brilliance</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-16.jpg")} alt="Diamond" class="img-fluid rounded" />
                                 </a>
                             </div>
                             <div class="col-md-4 p-3">
-                                <a href="project-single.html" class="link-thumbnail">
+                                <a href="/" class="link-thumbnail">
                                     <h3>Fluid Elegance</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-1.jpg")} alt="Diamond" class="img-fluid rounded" />
