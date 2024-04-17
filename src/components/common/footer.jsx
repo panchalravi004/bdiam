@@ -33,9 +33,9 @@ function Footer() {
                         <ul className="list-unstyled footer-link">
                             <li className="d-block">
                                 <span className="d-block">Address:</span>
-                                <span >34 Street Name, City Name Here, United States</span></li>
-                            <li className="d-block"><span className="d-block">Telephone:</span><span >+1 242 4942 290</span></li>
-                            <li className="d-block"><span className="d-block">Email:</span><span >info@yourdomain.com</span></li>
+                                <span >20W, 47th st New york NY, 10036</span></li>
+                            <li className="d-block"><span className="d-block">Telephone:</span><span >+1(646)691-7344 +1(201)554-5507</span></li>
+                            <li className="d-block"><span className="d-block">Email:</span><span >info@bdiamusa.com</span></li>
                         </ul>
                     </div>
                     <div className="col-md-3 mb-5">

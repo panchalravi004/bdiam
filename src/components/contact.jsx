@@ -69,17 +69,17 @@ function Contact() {
                                 <div className="col-md-8 mx-auto contact-form-contact-info">
                                     <p className="d-flex">
                                         <span className="ion-ios-location icon mr-5"></span>
-                                        <span>34 Street Name, City Name Here, United States</span>
+                                        <span>20W, 47th st New york NY, 10036</span>
                                     </p>
 
                                     <p className="d-flex">
                                         <span className="ion-ios-telephone icon mr-5"></span>
-                                        <span>+1 242 4942 290</span>
+                                        <span>+1(646)691-7344 +1(201)554-5507</span>
                                     </p>
 
                                     <p className="d-flex">
                                         <span className="ion-android-mail icon mr-5"></span>
-                                        <span>info@yourdomain.com</span>
+                                        <span>info@bdiamusa.com</span>
                                     </p>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ function Contact() {
                 <div className='container mb-4' style={{ height: "400px", borderRadius: '5px' }}>
                     <iframe
                         title="map-1"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4298819448836!2d72.60311062452872!3d23.00798312018827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c5f056745d%3A0xcfe5c6932fd679fa!2sKamla%20Nehru%20Zoo!5e0!3m2!1sen!2sin!4v1712853548264!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.230056685053!2d-73.98231312483058!3d40.75696453486316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe551dddd5%3A0xfd37c59c866f0bf0!2s20%20W%2047th%20St%2C%20New%20York%2C%20NY%2010036%2C%20USA!5e0!3m2!1sen!2sin!4v1713282082162!5m2!1sen!2sin"
                         style={{ border: 0, width: '100%', height: '100%', borderRadius: '10px' }}
                         allowfullscreen=""
                         loading="lazy"
