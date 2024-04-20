@@ -32,15 +32,15 @@ function Home() {
                 <div class="container-fluid" style={{background:"whitesmoke", opacity:"0.6"}}>
                     <div class="row p-2" >
                         <div class="col-4 d-flex flex-column align-items-center justify-content-center">
-                            <img src={require("../assets/images/diamon-vector/diamond-gift.png")} style={{opacity:"0.9"}} alt='' />
+                            <img className='home-vector-image' src={require("../assets/images/diamon-vector/diamond-gift.png")} style={{opacity:"0.9"}} alt='' />
                             <span className='font-weight-bold text-center'>Selection of Presents</span>
                         </div>
                         <div class="col-4 d-flex flex-column align-items-center justify-content-center my-5">
-                            <img src={require("../assets/images/diamon-vector/diamond.png")} style={{opacity:"0.9"}} alt='' />
+                            <img className='home-vector-image' src={require("../assets/images/diamon-vector/diamond.png")} style={{opacity:"0.9"}} alt='' />
                             <span className='font-weight-bold text-center'>Diamond Selections</span>
                         </div>
                         <div class="col-4 d-flex flex-column align-items-center justify-content-center">
-                            <img src={require("../assets/images/diamon-vector/diamond-ring.png")} style={{opacity:"0.9"}} alt='' />
+                            <img className='home-vector-image' src={require("../assets/images/diamon-vector/diamond-ring.png")} style={{opacity:"0.9"}} alt='' />
                             <span className='font-weight-bold text-center'>Customize Your Ring</span>
                         </div>
                     </div>

@@ -11953,6 +11953,9 @@ header.scrolled {
         width: 250px;
         right: 15px;
     }
+    .home-vector-image{
+        transform: scale(0.7);
+    }
     
 }
 
