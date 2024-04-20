@@ -10,16 +10,17 @@ function Contact() {
     return (
         <>
             <div class="inner-page">
-                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-7.jpg")})` }}>
+                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-11.jpg")})` }}>
 
                     <div className="container">
                         <div className="row slider-text align-items-center justify-content-center">
                             <div className="col-md-8 text-center col-sm-12 pt-5">
-                                <h1 className="pt-5"><span>Contact Us</span></h1>
-                                <p className="mb-5 w-75">
+                                <h1 className="pt-5" style={{textAlign:"start", marginLeft:"unset"}}><span>Contact Us</span></h1>
+                                <p className="mb-5 w-75" style={{margin:"unset", textAlign:"start"}}>
                                     We're here to assist you every step of the way. Whether you have inquiries about our products, need assistance with an order, or simply want to share your feedback, our dedicated team is ready to help.
                                 </p>
                             </div>
+                            <div className="col-md-4 col-sm-12 pt-5"></div>
                         </div>
                     </div>
 
