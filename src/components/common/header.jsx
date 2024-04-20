@@ -13,14 +13,14 @@ function Header() {
     }, []);
 
     return (
-        <header role="banner" className={`${isScrolled ? 'not-scrolled' : ''}`}>
-            {/* {`navbar navbar-expand-lg  fixed-top ${isScrolled ? 'navbar-light bg-light not-scrolled' : 'navbar-dark bg-dark scrolled'} `} */}
-            {/* "navbar navbar-expand-lg navbar-dark bg-dark" */}
-            <nav className={`navbar navbar-expand-lg ${isScrolled ? 'navbar-light bg-light' : 'navbar-dark bg-dark'} `}>
+        <header role="banner" className={`${isScrolled ? 'not-scrolled' : 'not-scrolled'}`}>
+            {/* ${isScrolled ? 'navbar-light bg-light' : 'navbar-dark bg-dark'} */}
+            <nav className={`navbar navbar-expand-lg navbar-light bg-light`}>
                 <div className="container-fluid">
                     <a className="navbar-brand " href="/">
-                        <i className="fa-solid fa-gem"></i>
-                        &nbsp;BDIAM
+                        {/* <i className="fa-solid fa-gem"></i>
+                        &nbsp;BDIAM */}
+                        <img src={require("../../assets/images/logo.png")} alt="" />
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -32,10 +32,10 @@ function Header() {
                                 <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">About</NavLink>
+                                <NavLink className="nav-link" to="/services">Services</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/services">Services</NavLink>
+                                <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contact">Contact</NavLink>

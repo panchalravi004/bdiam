@@ -1,3 +1,4 @@
+import Carousel from 'react-bootstrap/Carousel';
 import React, { useEffect } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -9,7 +10,7 @@ function Services() {
     return (
         <>
             <div className="inner-page">
-                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/slider/slider-9.png")})` }}>
+                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-15.jpg")})` }}>
 
                     <div className="container" style={{position:'relative'}}>
                         <div className="row slider-text align-items-center justify-content-center">
@@ -26,16 +27,24 @@ function Services() {
 
                 </div>
             </div>
-            <div className="container" style={{marginTop:"200px"}}>
+
+            <h2 className='text-center text-secondary' style={{marginTop:"150px", fontWeight:"lighter"}}>Discover Your Diamond Journey</h2>
+            <h6 className='text-center text-secondary' style={{fontWeight:"lighter"}}>Transforming Visions into Brilliant Realities: Explore Our Services.</h6>
+            
+            <div className="container" style={{marginTop:"50px", backgroundImage:`url(${require("../assets/images/jewellary/jw-5.jpg")})`, backgroundPosition:"center",height:"300px", borderRadius:"10px"}}></div>
+
+            <div className="container " style={{marginTop:"50px"}}>
                 <ScrollAnimation animateIn="fadeIn">
                     <div className="row">
                         <div className="col-lg-5 col-12">
-                            <img className='service-card-image' src={require("../assets/images/feature-images/diamond-24.jpg")} alt="" />
+                            <img className='service-card-image' src={require("../assets/images/jewellary/jw-2.jpg")} alt="" />
                         </div>
                         <div className="col-lg-7 col-12">
-                            <h3>Persistent Assortment</h3>
+                            <h3>Elegant Flourishes Craftsmanship Defined</h3>
                             <p>
-                                If you buy certified diamonds in bulk for your jewelry, you need to have a consistent grade. We ensure that all our diamonds are first carefully selected for size, color, clarity, dimension and carat and then packaged. Additionally, our in-house manufacturing facility allows us to ensure regular supply. So when you place an order with us, you can sit back and relax and leave the rest to us.Experience the ease of a reliable supply chain and the confidence that comes with consistently curated assortments.Elevate your jewelry creations with our commitment to precision and a seamless, reliable supply chain.
+                                At BDIAM, elegance isn't just a feature; it's the essence of our jewelry. Each piece is meticulously crafted by our skilled artisans, who infuse every design with exquisite details and impeccable craftsmanship. From delicate filigree to intricate engraving, our jewelry reflects the timeless beauty of classical elegance while embracing modern sophistication. 
+                                <br/>
+                                Explore our collection and discover how our craftsmanship defines elegance in every piece, making each creation a true work of art.
                             </p>
                         </div>
                     </div>
@@ -43,17 +52,21 @@ function Services() {
                 <ScrollAnimation animateIn="fadeIn">
                     <div className="row mt-5">
                         <div className="col-lg-5 col-12">
-                            <img className='service-card-image' src={require("../assets/images/feature-images/payment.jpg")} alt="" />
+                            <img className='service-card-image' src={require("../assets/images/jewellary/jw-3.jpg")} alt="" />
                         </div>
                         <div className="col-lg-7 col-12">
-                            <h3>Simplified Payment Solutions</h3>
+                            <h3>Perfect sizing solutions</h3>
                             <p>
-                                We not only offer cost-effective certified diamonds but also endeavor to ensure a seamless purchasing process for you. Upon verification of your references, we collaborate with you to establish a tailored payment plan that aligns with your requirements. Whether it’s defining terms or setting up a long-term memo program, we are dedicated to finding solutions that work for you. Our mantra remains: your success is our success. Enhance your buying experience with our focus on affordability and personalized payment options. Enjoy the simplicity of acquiring top-notch diamonds while retaining financial flexibility. 
+                                Find the perfect fit with BDIAM's sizing solutions. Whether it's resizing a ring to fit just right or customizing the length of a bracelet, our expert craftsmen ensure that every piece is tailored to perfection. Enjoy the comfort and confidence of jewelry that's made just for you.
+                                <br/>
+                                At BDIAM, we understand that the perfect piece of jewelry is not only about its design but also about how it fits and feels. That's why we offer comprehensive sizing solutions to ensure that your jewelry fits you perfectly. Our expert craftsmen pay meticulous attention to detail, whether it's resizing a ring to fit just right or adjusting the length of a necklace for optimal comfort. 
                             </p>
                         </div>
                     </div>
                 </ScrollAnimation>
             </div>
+
+            
 
             <ScrollAnimation animateIn="fadeIn">
                 <section className="section mt-5" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-14.jpg")})`, backgroundSize:'cover', boxShadow:'inset 0px 0px 300px #000000' }}>
@@ -82,23 +95,42 @@ function Services() {
                             </p>
                         </div>
                         <div className="col-lg-5 col-12">
-                            <img className='service-card-image' src={require("../assets/images/feature-images/diamond-23.jpg")} alt="" />
+                            <img className='service-card-image' src={require("../assets/images/jewellary/jw-4.jpg")} alt="" />
                         </div>
                     </div>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn">
                     <div className="row mt-5">
                         <div className="col-lg-7 col-12">
-                            <h3>Personal Production</h3>
+                            <h3>Enveloping And Fluting</h3>
                             <p>
-                                Personal Production at BDIAM offers a bespoke experience like no other. From concept to creation, our expert craftsmen work closely with you to bring your vision to life, ensuring that every detail reflects your unique style and personality. Whether you're designing a custom engagement ring or a one-of-a-kind jewelry piece, our personalized approach ensures that your creation is as extraordinary as you are. Experience the luxury of personalized service and unparalleled craftsmanship with BDIAM's Personal Production.
+                                We want to reduce the overhead costs for our customers. So, we give you the option of bagging and fluting where we create sorted batches for you based on your specific requirements. We make sure that you get just what you’re looking for at no extra costs.Streamline your sourcing process with us, where efficiency meets affordability. 
+                                <br/>
+                                Trust in our dedication to providing solutions that go beyond expectations, making us your preferred partner in every diamond endeavor. we deliver tailored solutions that prioritize your needs. Our bagging and fluting service not only reduces overhead costs but also adds a layer of convenience to your diamond sourcing journey. 
                             </p>
                         </div>
                         <div className="col-lg-5 col-12">
-                            <img className='service-card-image' src={require("../assets/images/feature-images/diamond-25.jpg")} alt="" />
+                            <img className='service-card-image' src={require("../assets/images/jewellary/jw-5.jpg")} alt="" />
                         </div>
                     </div>
                 </ScrollAnimation>
+            </div>
+
+            <div className="container mt-5" >
+                <Carousel>
+                    <Carousel.Item>
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-1.jpg")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-2.jpg")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-7.jpg")} alt='First slide' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-8.jpg")} alt='First slide' />
+                    </Carousel.Item>
+                </Carousel>
             </div>
         </>
     )

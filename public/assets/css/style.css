@@ -4944,10 +4944,19 @@ input[type="button"].btn-block {
 
 .navbar-light .navbar-brand {
     color: rgb(255 255 255 / 90%);
-    background: linear-gradient(90deg, #2d6bb3, #0e3f79);
+    /* background: linear-gradient(90deg, #2d6bb3, #0e3f79); */
+    background: transparent;
     padding: 0px 20px;
     border-radius: 25px;
-    border: 2px solid #80fde71f;
+    /* border: 2px solid #80fde71f; */
+    width: 120px;
+    height: 40px;
+}
+.navbar-light .navbar-brand img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
 }
 
 .navbar-light .navbar-brand:hover,
@@ -5000,10 +5009,20 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-brand {
     color: #fff;
-    background: linear-gradient(90deg, #2d6bb380, #0e3f7981);
+    /* background: linear-gradient(90deg, #2d6bb380, #0e3f7981); */
+    background: white;
     padding: 0px 20px;
     border-radius: 25px;
-    border: 2px solid #80fde71f;
+    /* border: 2px solid #80fde71f; */
+    width: 120px;
+    height: 40px;
+}
+
+.navbar-dark .navbar-brand img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
 }
 
 .navbar-dark .navbar-brand i{

@@ -91,47 +91,21 @@ function About() {
             </div>
 
 
-            <div className="container col-lg-8 col-12 mt-5">
+            <div className="container mt-5" >
                 <Carousel>
                     <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-1.png")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-1.jpg")} alt='First slide' />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-2.png")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-2.jpg")} alt='First slide' />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-3.png")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-7.jpg")} alt='First slide' />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-4.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-5.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-6.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-7.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-8.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-9.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-10.png")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-11.jpg")} alt='First slide' />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img style={{height:'250px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/slider/slider-12.jpg")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-8.jpg")} alt='First slide' />
                     </Carousel.Item>
                 </Carousel>
-
-                
             </div>
 
         </>
