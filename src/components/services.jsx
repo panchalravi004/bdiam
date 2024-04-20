@@ -31,7 +31,7 @@ function Services() {
             <h2 className='text-center text-secondary' style={{marginTop:"150px", fontWeight:"lighter"}}>Discover Your Diamond Journey</h2>
             <h6 className='text-center text-secondary' style={{fontWeight:"lighter"}}>Transforming Visions into Brilliant Realities: Explore Our Services.</h6>
             
-            <div className="container" style={{marginTop:"50px", backgroundImage:`url(${require("../assets/images/jewellary/jw-5.jpg")})`, backgroundPosition:"center",height:"300px", borderRadius:"10px"}}></div>
+            <div className="container" style={{marginTop:"50px", backgroundImage:`url(${require("../assets/images/jewellary/jw-5.jpg")})`, backgroundPosition:"center",height:"300px", borderRadius:"10px",transform:"scale(0.95)"}}></div>
 
             <div className="container " style={{marginTop:"50px"}}>
                 <ScrollAnimation animateIn="fadeIn">
