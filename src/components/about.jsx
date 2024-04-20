@@ -9,8 +9,8 @@ function About() {
 
     return (
         <>
-            <div className="inner-page">
-                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-10.jpg")})` }}>
+            {/* <div className="inner-page">
+                <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-20.jpg")})` }}>
 
                     <div className="container" >
                         <div className="row slider-text align-items-center justify-content-center">
@@ -24,6 +24,27 @@ function About() {
                         </div>
                     </div>
 
+                </div>
+            </div> */}
+
+            <div className="inner-page">
+                <div className='about-heading-image' style={{ backgroundImage: `url(${require("../assets/images/banner/banner-21.jpg")})`}}>
+                    <div className="container h-100" style={{position:"relative",zIndex:"2"}}>
+                        <div className="row h-100">
+                            <div className="col-lg-6 d-flex flex-column justify-content-center">
+                                <h1 className="pt-5" style={{textAlign:"start", marginLeft:"unset"}}><span>About Us</span></h1>
+                                <p className="mb-5" style={{margin:"unset", textAlign:"start"}}>
+                                    At BDIAM, we are more than just a diamond manufacturing company – we are purveyors of timeless elegance and unparalleled craftsmanship. With decades of experience in the industry.
+                                    <br/>
+                                    <br/>
+                                    Explore Our Extensive Array Of Services, Ranging From Personalized Jewelry Design To Expert Consultations On Exquisite Gemstones. We Are Committed To Ensuring Your Experience With Diamonds Is Not Only Seamless But Truly Extraordinary.
+                                </p>
+                            </div>
+                            <div className="col-lg-6 d-flex align-items-center justify-content-center">
+                                <img src={require("../assets/images/jewellary/jw-12.jpg")} alt="" srcset="" style={{width:"280px", borderRadius:"15px"}} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

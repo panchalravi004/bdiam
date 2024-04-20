@@ -119,16 +119,16 @@ function Services() {
             <div className="container mt-5" >
                 <Carousel>
                     <Carousel.Item>
-                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-1.jpg")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover', borderRadius:'10px'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-1.jpg")} alt='First slide' />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-2.jpg")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover', borderRadius:'10px'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-2.jpg")} alt='First slide' />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-7.jpg")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover', borderRadius:'10px'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-7.jpg")} alt='First slide' />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={{height:'350px', objectFit:'cover'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-8.jpg")} alt='First slide' />
+                        <img style={{height:'350px', objectFit:'cover', borderRadius:'10px'}} className="d-block w-100" src={require("../assets/images/jw-slider/jws-8.jpg")} alt='First slide' />
                     </Carousel.Item>
                 </Carousel>
             </div>

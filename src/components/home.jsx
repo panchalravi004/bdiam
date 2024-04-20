@@ -9,7 +9,7 @@ function Home() {
 
     return (
         <>
-            <div className="">
+            <div className="inner-page">
                 {/* Header Section */}
                 <section className="home-slider owl-carousel .owl-loaded" style={{ display: 'unset' }}>
                     <div className="slider-item" style={{ backgroundImage: `url('${require("../assets/images/banner/banner-1.png")}')` }} >
@@ -31,21 +31,46 @@ function Home() {
             <ScrollAnimation animateIn="fadeIn">
                 <div class="container-fluid" style={{background:"whitesmoke", opacity:"0.6"}}>
                     <div class="row p-2" >
-                        <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
                             <img src={require("../assets/images/diamon-vector/diamond-gift.png")} style={{opacity:"0.9"}} alt='' />
-                            <span className='font-weight-bold'>Selection of Presents</span>
+                            <span className='font-weight-bold text-center'>Selection of Presents</span>
                         </div>
-                        <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center my-5">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center my-5">
                             <img src={require("../assets/images/diamon-vector/diamond.png")} style={{opacity:"0.9"}} alt='' />
-                            <span className='font-weight-bold'>Diamond Selections</span>
+                            <span className='font-weight-bold text-center'>Diamond Selections</span>
                         </div>
-                        <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
                             <img src={require("../assets/images/diamon-vector/diamond-ring.png")} style={{opacity:"0.9"}} alt='' />
-                            <span className='font-weight-bold'>Customize Your Ring</span>
+                            <span className='font-weight-bold text-center'>Customize Your Ring</span>
                         </div>
                     </div>
                 </div>
             </ScrollAnimation>
+
+            <h2 className='text-center text-secondary' style={{marginTop:"50px", fontWeight:"lighter"}}>Welcome to BDIAM's World of Excellence.</h2>
+            <h6 className='text-center text-secondary' style={{fontWeight:"lighter"}}>Step into a realm where elegance meets excellence. Where every moment is adorned with brilliance.</h6>
+                    
+            <div className="container " style={{marginTop:"50px", backgroundImage:`url(${require("../assets/images/jewellary/jw-10.jpg")})`, backgroundPosition:"center",height:"300px", borderRadius:"10px", objectFit:"cover", transform:"scale(0.95)"}}></div>
+
+            <div className="container " style={{marginTop:"100px", padding:"25px"}}>
+                <div className="row">
+                    <div className="col-lg-3" style={{padding:"0"}}>
+                        <img src={require("../assets/images/diamond-lab/dl-3.jpg")} alt="" srcset="" style={{width:"100%",height:"380px", objectFit:"cover",borderRadius:"10px"}} />
+                    </div>
+                    <div className="col-lg-6 d-flex justify-content-center flex-column" style={{padding:"10px 25px"}}>
+                        <h4>Ethical Sourcing Our Commitment to Transparency</h4>
+                        <p style={{textAlign:"justify"}}>
+                            We take pride in our commitment to transparency and ethical practices. We collaborate closely with our esteemed mining partners to develop customized traceability programs for all our diamonds.
+                            <br/>
+                            <br/>
+                            We work with our mining partners to develop customized traceability programs for all of our diamonds. This allows us to provide our customers with proof of the origin and legal sourcing methods used for the diamond.
+                        </p>
+                    </div>
+                    <div className="col-lg-3" style={{padding:"0"}}>
+                        <img src={require("../assets/images/diamond-lab/dl-9.jpg")} alt="" srcset="" style={{width:"100%",height:"380px", objectFit:"cover",borderRadius:"10px"}} />
+                    </div>
+                </div>
+            </div>
 
             {/* Problem & Solve */}
             <section className="section">
@@ -57,11 +82,11 @@ function Home() {
                     </div>
                     <ScrollAnimation animateIn="fadeIn">
                         <div className="row align-items-stretch">
-                            <div className="col-lg-4 order-lg-2">
-                                <div className="scaling-image h-100"><div className="frame h-100"><div className="feature-img-bg h-100 rounded" style={{ backgroundImage: `url('${require("../assets/images/feature-images/diamond-2.jpg")}')` }}></div></div></div>
+                            <div className="col-lg-4 order-lg-2 pt-2">
+                                <div className="scaling-image h-100"><div className="frame h-100"><div className="feature-img-bg h-100 rounded" style={{ backgroundImage: `url('${require("../assets/images/jewellary/jw-11.jpg")}')` }}></div></div></div>
                             </div>
 
-                            <div className="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+                            <div className="col-md-6 col-lg-4 pt-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
 
                                 <div className="feature-1 d-md-flex feature-card">
                                     <div className="align-self-center">
@@ -81,7 +106,7 @@ function Home() {
 
                             </div>
 
-                            <div className="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+                            <div className="col-md-6 col-lg-4 pt-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
 
                                 <div className="feature-1 d-md-flex feature-card">
                                     <div className="align-self-center">
@@ -105,6 +130,20 @@ function Home() {
                     </ScrollAnimation>
                 </div>
             </section>
+
+            <div className="container mb-5">
+                <div className="row">
+                    <div className="col-lg-8">
+                        <img src={require("../assets/images/diamond-lab/dl-2.jpg")} alt="" srcset="" style={{width:"100%", borderRadius:"15px"}} />
+                    </div>
+                    <div className="col-lg-4">
+                        <h4>Innovation Hub Unveiling Diamond Science</h4>
+                        <p >
+                            Discover the heart of diamond innovation at our state-of-the-art Diamond Lab. Through groundbreaking research and cutting-edge technology, we redefine the standards of diamond analysis, ensuring the highest quality and integrity in every gem we offer.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             {/* Service Category */}
             <ScrollAnimation animateIn="fadeIn">
@@ -221,27 +260,6 @@ function Home() {
                                     <h3>Cascade of Brilliance</h3>
                                     <i className="fa-solid fa-gem icon"></i>
                                     <img src={require("../assets/images/feature-images/diamond-7.jpg")} alt="Diamond" class="img-fluid rounded" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <a href="/" class="link-thumbnail">
-                                    <h3>Contemporary Cluster</h3>
-                                    <i className="fa-solid fa-gem icon"></i>
-                                    <img src={require("../assets/images/feature-images/diamond-15.jpg")} alt="Diamond" class="img-fluid rounded" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <a href="/" class="link-thumbnail">
-                                    <h3>Sculptural Brilliance</h3>
-                                    <i className="fa-solid fa-gem icon"></i>
-                                    <img src={require("../assets/images/feature-images/diamond-16.jpg")} alt="Diamond" class="img-fluid rounded" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <a href="/" class="link-thumbnail">
-                                    <h3>Fluid Elegance</h3>
-                                    <i className="fa-solid fa-gem icon"></i>
-                                    <img src={require("../assets/images/feature-images/diamond-1.jpg")} alt="Diamond" class="img-fluid rounded" />
                                 </a>
                             </div>
                         </div>
