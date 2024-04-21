@@ -31,8 +31,13 @@ function Header() {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/services">Services</NavLink>
+                            <li className="nav-item dropdown">
+                                <NavLink to='/services' className="nav-link dropdown-toggle" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Services</NavLink>
+                                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <NavLink className="dropdown-item" to="/services">Our Services</NavLink>
+                                    <NavLink className="dropdown-item" to="/diamond">Natural Diamond Lab Created Diamond</NavLink>
+                                    <NavLink className="dropdown-item" to="/jewellery">Diamond Jewellery</NavLink>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/about">About</NavLink>

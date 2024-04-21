@@ -41,6 +41,9 @@ function Footer() {
                     <div className="col-md-3 mb-5">
                         <h3>Quick Links</h3>
                         <ul className="list-unstyled footer-link">
+                            <li><NavLink to="/services">Our Services</NavLink></li>
+                            <li><NavLink to="/diamond">Natural Diamond Lab Created Diamond</NavLink></li>
+                            <li><NavLink to="/jewellery">Diamond Jewellery</NavLink></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>

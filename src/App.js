@@ -7,6 +7,8 @@ import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
 import Services from './components/services';
+import NaturalDiamond from './components/naturalDiamond';
+import DiamondJewellery from './components/diamondJewellery';
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                     <Route exact path="/about" element={<About />}></Route>
                     <Route exact path="/contact" element={<Contact />}></Route>
                     <Route exact path="/services" element={<Services />}></Route>
+                    <Route exact path="/diamond" element={<NaturalDiamond />}></Route>
+                    <Route exact path="/jewellery" element={<DiamondJewellery />}></Route>
                     <Route exact path="/*" element={<Navigate to="/"/>}></Route>
                 </Routes>
             <Footer/>
