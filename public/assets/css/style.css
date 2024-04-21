@@ -10659,7 +10659,7 @@ header .navbar .dropdown-menu {
     border-radius: 4px;
     border: 2px solid white;
     -webkit-box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 30px 0px rgba(204, 204, 204, 0.2);
+    box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
     min-width: 13em;
     margin-top: -10px;
     overflow: hidden;
@@ -10685,10 +10685,12 @@ header .navbar .dropdown-menu:before {
     }
 }
 
+header .navbar .dropdown-menu .dropdown-item{
+    border-radius: 5px;
+}
 header .navbar .dropdown-menu .dropdown-item:hover {
     background: #0058a4;
     color: #fff;
-    border-radius: 5px;
 }
 
 header .navbar .dropdown-menu .dropdown-item.active {
