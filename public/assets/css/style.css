@@ -10687,6 +10687,7 @@ header .navbar .dropdown-menu:before {
 
 header .navbar .dropdown-menu .dropdown-item{
     border-radius: 5px;
+    margin: 5px 0px;
 }
 header .navbar .dropdown-menu .dropdown-item:hover {
     background: #0058a4;
