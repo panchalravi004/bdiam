@@ -34,7 +34,7 @@ function Footer() {
                             <li className="d-block">
                                 <span className="d-block">Address:</span>
                                 <span >20W, 47th st New york NY, 10036</span></li>
-                            <li className="d-block"><span className="d-block">Telephone:</span><span >+1(646)691-7344 +1(201)554-5507</span></li>
+                            <li className="d-block"><span className="d-block">Telephone:</span><span >+1(646)691-7344 <br/> +1(201)554-5507</span></li>
                             <li className="d-block"><span className="d-block">Email:</span><span >info@bdiamusa.com</span></li>
                         </ul>
                     </div>
@@ -42,7 +42,8 @@ function Footer() {
                         <h3>Quick Links</h3>
                         <ul className="list-unstyled footer-link">
                             <li><NavLink to="/services">Our Services</NavLink></li>
-                            <li><NavLink to="/diamond">Natural Diamond Lab Created Diamond</NavLink></li>
+                            <li><NavLink to="/natural-diamond">Natural Diamond</NavLink></li>
+                            <li><NavLink to="/lab-created-diamond">Lab Created Diamond</NavLink></li>
                             <li><NavLink to="/jewellery">Diamond Jewellery</NavLink></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
