@@ -4950,13 +4950,13 @@ input[type="button"].btn-block {
     border-radius: 25px;
     /* border: 2px solid #80fde71f; */
     width: 120px;
-    height: 40px;
+    height: 80px;
 }
 .navbar-light .navbar-brand img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transform: scale(1.2);
+    transform: scale(2);
 }
 
 .navbar-light .navbar-brand:hover,
