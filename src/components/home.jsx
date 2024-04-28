@@ -27,7 +27,7 @@ function Home() {
             </div> */}
 
 
-            <div className="home-inner-page inner-page" style={{margin:"100px 0px", backgroundImage: `url(${require("../assets/images/banner/banner-21.jpg")})`}}>
+            <div className="home-inner-page inner-page" style={{margin:"100px 0px", backgroundImage: `url(${require("../assets/images/banner/banner-21.jpg")})`, backgroundRepeat:'no-repeat'}}>
                 <div className="container" style={{zIndex:'10', position:'relative'}}>
                     <div class="row">
                         <div className="col-lg-6 col-12">
