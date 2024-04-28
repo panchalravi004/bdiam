@@ -9,14 +9,12 @@ function Home() {
 
     return (
         <>
-            <div className="inner-page">
-                {/* Header Section */}
+            {/* <div className="inner-page">
                 <section className="home-slider owl-carousel .owl-loaded" style={{ display: 'unset' }}>
                     <div className="slider-item" style={{ backgroundImage: `url('${require("../assets/images/banner/banner-1.png")}')` }} >
                         <div className="container">
                             <div className="row slider-text align-items-center justify-content-center">
                                 <div className="col-lg-7 text-center col-sm-12 ">
-                                    {/* <div className="btn-play-wrap mx-auto"><p className="mb-4"><a href="https://vimeo.com/59256790" data-fancybox data-ratio="2" className="btn-play"><span className="ion ion-ios-play"></span></a></p></div> */}
                                     <h1 className="mb-4"><span>Gems of Everlasting Devotion</span></h1>
                                     <p className="mb-1 w-100" >
                                         Welcome to BDIAM, where every diamond tells a story of enduring elegance. Dive into a world of unparalleled craftsmanship and timeless beauty, meticulously curated for those who cherish the epitome of quality.
@@ -26,7 +24,33 @@ function Home() {
                         </div>
                     </div>
                 </section>
+            </div> */}
+
+
+            <div className="home-inner-page inner-page" style={{margin:"100px 0px", backgroundImage: `url(${require("../assets/images/banner/banner-21.jpg")})`}}>
+                <div className="container" >
+                    <div class="row">
+                        <div className="col-lg-6 col-12">
+                            <h1 className="mb-4"><span>Gems of Everlasting Devotion</span></h1>
+                            <p className="mb-1 w-100" >
+                                Welcome to BDIAM, where every diamond tells a story of enduring elegance. Dive into a world of unparalleled craftsmanship and timeless beauty, meticulously curated for those who cherish the epitome of quality.
+                            </p>
+                        </div>
+                        <div className="col-lg-6 col-12" style={{top:'100px'}}>
+                            <video style={{borderRadius:'10px', width:'100%', marginTop:'15px'}} loop="true" autoplay="autoplay" muted>
+                                <source src={require("../assets/videos/diamond.mp4")} type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div className=" home-diamond-shape-container col-lg-6 col-12 d-flex justify-content-center" style={{gap:"0px 50px", flexWrap:'wrap'}}>
+                            <img className='home-diamond-shape-image one' src={require("../assets/images/feature-images/diamond-shape.png")} style={{opacity:"0.9", width:"200px"}} alt='' />
+                            <img className='home-diamond-shape-image' src={require("../assets/images/feature-images/diamond-shape-2.png")} style={{opacity:"0.9", width:"200px"}} alt='' />
+                            <img className='home-diamond-shape-image' src={require("../assets/images/feature-images/diamond-shape-1.png")} style={{opacity:"0.9", width:"200px"}} alt='' />
+                        </div>
+                    </div>    
+                </div>
             </div>
+
+            
 
             <ScrollAnimation animateIn="fadeIn">
                 <div class="container-fluid" style={{background:"whitesmoke", opacity:"0.6"}}>

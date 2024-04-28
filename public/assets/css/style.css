@@ -11954,6 +11954,7 @@ header.scrolled {
     object-fit:cover; 
     border-radius:10px
 }
+
 @media (max-width: 991.98px){
     .service-slide-over-image{
         width: 250px;
@@ -11962,7 +11963,23 @@ header.scrolled {
     .home-vector-image{
         transform: scale(0.7);
     }
-    
+
+    .home-diamond-shape-image{
+        width: 100px;
+    }
+    .home-diamond-shape-image.one{
+        order: 1;
+    }
+
+    .home-diamond-shape-container{
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        scale: 0.5;
+    }
+    .home-inner-page{
+        margin-top: 60px !important;
+        margin-bottom: 10px !important;
+    }
 }
 
 .about-heading-image{

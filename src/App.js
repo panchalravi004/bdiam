@@ -10,11 +10,13 @@ import Services from './components/services';
 import NaturalDiamond from './components/naturalDiamond';
 import DiamondJewellery from './components/diamondJewellery';
 import LabCreatedDiamond from './components/labCreatedDiamond';
+// import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
     return (
         <Router>
             <Header/>
+            {/* <AnimatedCursor color='193, 11, 111' outerAlpha={0.2} /> */}
                 <Routes>
                     <Route exact path="/" element={<Home />}></Route>
                     <Route exact path="/about" element={<About />}></Route>
