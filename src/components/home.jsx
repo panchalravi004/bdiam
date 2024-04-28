@@ -28,7 +28,7 @@ function Home() {
 
 
             <div className="home-inner-page inner-page" style={{margin:"100px 0px", backgroundImage: `url(${require("../assets/images/banner/banner-21.jpg")})`}}>
-                <div className="container" >
+                <div className="container" style={{zIndex:'10', position:'relative'}}>
                     <div class="row">
                         <div className="col-lg-6 col-12">
                             <h1 className="mb-4"><span>Gems of Everlasting Devotion</span></h1>
