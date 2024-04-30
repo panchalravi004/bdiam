@@ -1,11 +1,46 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 function Contact() {
 
+    const [formData, setFormData] = useState({
+        name:'',
+        phone:'',
+        email:'',
+        message:''
+    })
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+
+    const handleInputChange = (e)=>{
+        setFormData({
+            ...formData,
+            [e.target.name]:e.target.value
+        })
+    }
+
+    const handleFormSubmit = async (e)=>{
+        e.preventDefault();
+        console.log('handleFormSubmit ',JSON.stringify(formData));
+
+        try {
+            const response = await fetch('/phpmailer.php',{
+                method:'POST',
+                body:JSON.stringify(formData),
+                headers:{
+                    'Content-Type':'application/json'
+                }
+            })
+
+            const result = await response.json();
+            console.log('handleFormSubmit ',JSON.stringify(result));
+        } catch (error) {
+            console.log('handleFormSubmit Error :', error);
+            console.log('handleFormSubmit Error :', error.stack);
+        }
+    }
 
     return (
         <>
@@ -30,15 +65,15 @@ function Contact() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 mb-5 order-2">
-                            <form action="#" method="post">
+                            <form onSubmit={handleFormSubmit} >
                                 <div className="row">
                                     <div className="col-md-6 form-group">
                                         <label for="name">Name</label>
-                                        <input type="text" id="name" className="form-control " />
+                                        <input onChange={handleInputChange} type="text" id="name" name="name" className="form-control " />
                                     </div>
                                     <div className="col-md-6 form-group">
                                         <label for="phone">Phone</label>
-                                        <input type="text" id="phone" className="form-control " />
+                                        <input onChange={handleInputChange} type="text" id="phone" name="phone" className="form-control " />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -49,13 +84,13 @@ function Contact() {
                                 <div className="row">
                                     <div className="col-md-12 form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" id="email" className="form-control " />
+                                        <input onChange={handleInputChange} type="email" id="email" name="email" className="form-control " />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-12 form-group">
                                         <label for="message">Write Message</label>
-                                        <textarea name="message" id="message" className="form-control " cols="30" rows="8"></textarea>
+                                        <textarea onChange={handleInputChange} name="message" id="message" className="form-control " cols="30" rows="8"></textarea>
                                     </div>
                                 </div>
                                 <div className="row">
