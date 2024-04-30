@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import { GridLoader } from 'react-spinners';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Contact() {
 
     const [formData, setFormData] = useState({
@@ -9,6 +11,8 @@ function Contact() {
         email:'',
         message:''
     })
+
+    let [loading, setLoading] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -24,18 +28,34 @@ function Contact() {
     const handleFormSubmit = async (e)=>{
         e.preventDefault();
         console.log('handleFormSubmit ',JSON.stringify(formData));
-
+        const form = new FormData();
+        form.append('name', formData['name'])
+        form.append('email', formData['email'])
+        form.append('phone', formData['phone'])
+        form.append('message', formData['message'])
         try {
-            const response = await fetch('/phpmailer.php',{
+            setLoading(true);
+            const response = await fetch('https://bdiamusa.com/phpmailer.php',{
                 method:'POST',
-                body:JSON.stringify(formData),
-                headers:{
-                    'Content-Type':'application/json'
-                }
+                body:form
             })
 
-            const result = await response.json();
-            console.log('handleFormSubmit ',JSON.stringify(result));
+            let result = await response.text();
+            console.log('handleFormSubmit ',result);
+            result = JSON.parse(result);
+            console.log('handleFormSubmit ',result);
+            if(result['status'] === 'Success'){
+                // show toast message
+                toast.success(result['message'])
+            }else{
+                
+                toast.warning(result['message'])
+            }
+            setLoading(false);
+            document.querySelectorAll("#name,#phone,#email,#message")
+            .forEach(element => {
+                element.value = '';
+            });
         } catch (error) {
             console.log('handleFormSubmit Error :', error);
             console.log('handleFormSubmit Error :', error.stack);
@@ -44,7 +64,14 @@ function Contact() {
 
     return (
         <>
-            <div class="inner-page">
+            {
+                loading &&
+                <div className="d-flex justify-content-center align-items-center" style={{width:"100%",height:"100%", top:"0",background:"#0000004f",zIndex:1000, position:"fixed"}}>
+                    <GridLoader size={10} color={"#ffffff"} loading={loading}/>
+                </div>
+            }
+            <ToastContainer/>
+            <div className="inner-page">
                 <div className="slider-item" style={{ backgroundImage: `url(${require("../assets/images/banner/banner-11.jpg")})` }}>
 
                     <div className="container">
@@ -68,11 +95,11 @@ function Contact() {
                             <form onSubmit={handleFormSubmit} >
                                 <div className="row">
                                     <div className="col-md-6 form-group">
-                                        <label for="name">Name</label>
-                                        <input onChange={handleInputChange} type="text" id="name" name="name" className="form-control " />
+                                        <label htmlFor="name">Name</label>
+                                        <input onChange={handleInputChange} type="text" id="name" name="name" className="form-control " required />
                                     </div>
                                     <div className="col-md-6 form-group">
-                                        <label for="phone">Phone</label>
+                                        <label htmlFor="phone">Phone</label>
                                         <input onChange={handleInputChange} type="text" id="phone" name="phone" className="form-control " />
                                     </div>
                                 </div>
@@ -83,13 +110,13 @@ function Contact() {
                                 </div>
                                 <div className="row">
                                     <div className="col-md-12 form-group">
-                                        <label for="email">Email</label>
-                                        <input onChange={handleInputChange} type="email" id="email" name="email" className="form-control " />
+                                        <label htmlFor="email">Email</label>
+                                        <input onChange={handleInputChange} type="email" id="email" name="email" className="form-control " required />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-12 form-group">
-                                        <label for="message">Write Message</label>
+                                        <label htmlFor="message">Write Message</label>
                                         <textarea onChange={handleInputChange} name="message" id="message" className="form-control " cols="30" rows="8"></textarea>
                                     </div>
                                 </div>
@@ -130,9 +157,9 @@ function Contact() {
                         title="map-1"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.230056685053!2d-73.98231312483058!3d40.75696453486316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe551dddd5%3A0xfd37c59c866f0bf0!2s20%20W%2047th%20St%2C%20New%20York%2C%20NY%2010036%2C%20USA!5e0!3m2!1sen!2sin!4v1713282082162!5m2!1sen!2sin"
                         style={{ border: 0, width: '100%', height: '100%', borderRadius: '10px' }}
-                        allowfullscreen=""
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
             </ScrollAnimation>

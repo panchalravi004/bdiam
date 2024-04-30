@@ -17,7 +17,7 @@ function NaturalDiamond() {
                                 </p>
                             </div>
                             <div className="col-lg-6 d-flex align-items-center justify-content-center">
-                                <img src={require("../assets/images/natural-diamond/nd-1.jpg")} alt="" srcset="" style={{ width: "400px", borderRadius: "15px" }} />
+                                <img src={require("../assets/images/natural-diamond/nd-1.jpg")} alt="" srcSet="" style={{ width: "400px", borderRadius: "15px" }} />
                             </div>
                         </div>
                     </div>
@@ -28,50 +28,50 @@ function NaturalDiamond() {
             <h6 className='text-center text-secondary px-2' style={{fontWeight:"lighter"}}>Our collection showcases the unparalleled beauty and enduring elegance of these rare treasures, perfect for celebrating life's most cherished moments.</h6>
               
             <div className="container mt-5">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div className="row">
+                    <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
                         <img
                             src={require("../assets/images/natural-diamond/nd-2.jpg")}
-                            class="w-100 shadow-1-strong rounded mb-4"
+                            className="w-100 shadow-1-strong rounded mb-4"
                             alt="Boat on Calm Water"
                             style={{height:"200px", objectFit:"cover"}}
                         />
 
                         <img
                             src={require("../assets/images/natural-diamond/nd-3.jpg")}
-                            class="w-100 shadow-1-strong rounded mb-4"
+                            className="w-100 shadow-1-strong rounded mb-4"
                             alt="Wintry Mountain Landscape"
                             style={{height:"400px", objectFit:"cover"}}
                         />
                     </div>
 
-                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div className="col-lg-4 mb-4 mb-lg-0">
                         <img
                             src={require("../assets/images/natural-diamond/nd-4.jpg")}
-                            class="w-100 shadow-1-strong rounded mb-4"
+                            className="w-100 shadow-1-strong rounded mb-4"
                             alt="Mountains in the Clouds"
                             style={{height:"400px", objectFit:"cover"}}
                         />
 
                         <img
                             src={require("../assets/images/natural-diamond/nd-5.jpg")}
-                            class="w-100 shadow-1-strong rounded mb-4"
+                            className="w-100 shadow-1-strong rounded mb-4"
                             alt="Boat on Calm Water"
                             style={{height:"200px", objectFit:"cover"}}
                         />
                     </div>
 
-                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div className="col-lg-4 mb-4 mb-lg-0">
                         <img
                             src={require("../assets/images/natural-diamond/nd-6.jpg")}
-                            class="w-100 shadow-1-strong rounded mb-4"
+                            className="w-100 shadow-1-strong rounded mb-4"
                             alt="Waves at Sea"
                             style={{height:"200px", objectFit:"cover"}}
                         />
 
                         <img
                             src={require("../assets/images/natural-diamond/nd-7.jpg")}
-                            class="w-100 shadow-1-strong rounded mb-4"
+                            className="w-100 shadow-1-strong rounded mb-4"
                             alt="Yosemite National Park"
                             style={{height:"400px", objectFit:"cover"}}
                         />

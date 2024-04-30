@@ -29,7 +29,7 @@ function Home() {
 
             <div className="home-inner-page inner-page" style={{margin:"100px 0px", backgroundImage: `url(${require("../assets/images/banner/banner-21.jpg")})`, backgroundRepeat:'no-repeat'}}>
                 <div className="container" style={{zIndex:'10', position:'relative'}}>
-                    <div class="row">
+                    <div className="row">
                         <div className="col-lg-6 col-12">
                             <h1 className="mb-4"><span>Gems of Everlasting Devotion</span></h1>
                             <p className="mb-1 w-100" >
@@ -37,7 +37,7 @@ function Home() {
                             </p>
                         </div>
                         <div className="col-lg-6 col-12" style={{top:'100px'}}>
-                            <video style={{borderRadius:'10px', width:'100%', marginTop:'15px'}} loop="true" autoplay="autoplay" muted>
+                            <video style={{borderRadius:'10px', width:'100%', marginTop:'15px'}} loop={true} autoPlay="autoplay" muted>
                                 <source src={require("../assets/videos/diamond.mp4")} type="video/mp4"/>
                             </video>
                         </div>
@@ -53,17 +53,17 @@ function Home() {
             
 
             <ScrollAnimation animateIn="fadeIn">
-                <div class="container-fluid" style={{background:"whitesmoke", opacity:"0.6"}}>
-                    <div class="row p-2" >
-                        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+                <div className="container-fluid" style={{background:"whitesmoke", opacity:"0.6"}}>
+                    <div className="row p-2" >
+                        <div className="col-4 d-flex flex-column align-items-center justify-content-center">
                             <img className='home-vector-image' src={require("../assets/images/diamon-vector/diamond-gift.png")} style={{opacity:"0.9"}} alt='' />
                             <span className='font-weight-bold text-center'>Selection of Presents</span>
                         </div>
-                        <div class="col-4 d-flex flex-column align-items-center justify-content-center my-5">
+                        <div className="col-4 d-flex flex-column align-items-center justify-content-center my-5">
                             <img className='home-vector-image' src={require("../assets/images/diamon-vector/diamond.png")} style={{opacity:"0.9"}} alt='' />
                             <span className='font-weight-bold text-center'>Diamond Selections</span>
                         </div>
-                        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+                        <div className="col-4 d-flex flex-column align-items-center justify-content-center">
                             <img className='home-vector-image' src={require("../assets/images/diamon-vector/diamond-ring.png")} style={{opacity:"0.9"}} alt='' />
                             <span className='font-weight-bold text-center'>Customize Your Ring</span>
                         </div>
@@ -79,7 +79,7 @@ function Home() {
             <div className="container " style={{marginTop:"100px", padding:"25px"}}>
                 <div className="row">
                     <div className="col-lg-3" style={{padding:"0"}}>
-                        <img src={require("../assets/images/diamond-lab/dl-3.jpg")} alt="" srcset="" style={{width:"100%",height:"380px", objectFit:"cover",borderRadius:"10px"}} />
+                        <img src={require("../assets/images/diamond-lab/dl-3.jpg")} alt="" srcSet="" style={{width:"100%",height:"380px", objectFit:"cover",borderRadius:"10px"}} />
                     </div>
                     <div className="col-lg-6 d-flex justify-content-center flex-column" style={{padding:"10px 25px"}}>
                         <h4>Ethical Sourcing Our Commitment to Transparency</h4>
@@ -91,7 +91,7 @@ function Home() {
                         </p>
                     </div>
                     <div className="col-lg-3" style={{padding:"0"}}>
-                        <img src={require("../assets/images/diamond-lab/dl-9.jpg")} alt="" srcset="" style={{width:"100%",height:"380px", objectFit:"cover",borderRadius:"10px"}} />
+                        <img src={require("../assets/images/diamond-lab/dl-9.jpg")} alt="" srcSet="" style={{width:"100%",height:"380px", objectFit:"cover",borderRadius:"10px"}} />
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@ function Home() {
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-lg-8">
-                        <img src={require("../assets/images/diamond-lab/dl-2.jpg")} alt="" srcset="" style={{width:"100%", borderRadius:"15px"}} />
+                        <img src={require("../assets/images/diamond-lab/dl-2.jpg")} alt="" srcSet="" style={{width:"100%", borderRadius:"15px"}} />
                     </div>
                     <div className="col-lg-4">
                         <h4>Innovation Hub Unveiling Diamond Science</h4>
@@ -253,37 +253,37 @@ function Home() {
                 </div>
             </section>
 
-            <section class="section border-t pb-0">
-                <div class="container">
-                    <div class="row justify-content-center mb-5">
-                        <div class="col-md-8 text-center">
-                            <h2 class=" heading mb-4">Redefining the Diamond Experience</h2>
-                            <p class="mb-5 lead">Enter a realm of unparalleled brilliance and innovation with Brilliant Dynamics. We are at the forefront of redefining the diamond experience, blending timeless elegance with cutting-edge technology. Our commitment to excellence and dynamic approach ensures that each diamond embodies the epitome of beauty and sophistication. </p>
+            <section className="section border-t pb-0">
+                <div className="container">
+                    <div className="row justify-content-center mb-5">
+                        <div className="col-md-8 text-center">
+                            <h2 className=" heading mb-4">Redefining the Diamond Experience</h2>
+                            <p className="mb-5 lead">Enter a realm of unparalleled brilliance and innovation with Brilliant Dynamics. We are at the forefront of redefining the diamond experience, blending timeless elegance with cutting-edge technology. Our commitment to excellence and dynamic approach ensures that each diamond embodies the epitome of beauty and sophistication. </p>
                         </div>
                     </div>
                 </div>
                 <ScrollAnimation animateIn="fadeIn">
-                    <div class="container-fluid">
-                        <div class="row no-gutters">
-                            <div class="col-md-4 p-3">
-                                <a href="/" class="link-thumbnail">
+                    <div className="container-fluid">
+                        <div className="row no-gutters">
+                            <div className="col-md-4 p-3">
+                                <a href="/" className="link-thumbnail">
                                     <h3>Dynamic Solitaire</h3>
                                     <i className="fa-solid fa-gem icon"></i>
-                                    <img src={require("../assets/images/feature-images/diamond-4.jpeg")} alt="Diamond" class="img-fluid rounded" />
+                                    <img src={require("../assets/images/feature-images/diamond-4.jpeg")} alt="Diamond" className="img-fluid rounded" />
                                 </a>
                             </div>
-                            <div class="col-md-4 p-3">
-                                <a href="/" class="link-thumbnail">
+                            <div className="col-md-4 p-3">
+                                <a href="/" className="link-thumbnail">
                                     <h3>Ethereal Halo</h3>
                                     <i className="fa-solid fa-gem icon"></i>
-                                    <img src={require("../assets/images/feature-images/diamond-18.jpg")} alt="Diamond" class="img-fluid rounded" />
+                                    <img src={require("../assets/images/feature-images/diamond-18.jpg")} alt="Diamond" className="img-fluid rounded" />
                                 </a>
                             </div>
-                            <div class="col-md-4 p-3">
-                                <a href="/" class="link-thumbnail">
+                            <div className="col-md-4 p-3">
+                                <a href="/" className="link-thumbnail">
                                     <h3>Cascade of Brilliance</h3>
                                     <i className="fa-solid fa-gem icon"></i>
-                                    <img src={require("../assets/images/feature-images/diamond-7.jpg")} alt="Diamond" class="img-fluid rounded" />
+                                    <img src={require("../assets/images/feature-images/diamond-7.jpg")} alt="Diamond" className="img-fluid rounded" />
                                 </a>
                             </div>
                         </div>

@@ -23,7 +23,7 @@ function About() {
                                 </p>
                             </div>
                             <div className="col-lg-6 d-flex align-items-center justify-content-center">
-                                <img src={require("../assets/images/jewellary/jw-12.jpg")} alt="" srcset="" style={{width:"280px", borderRadius:"15px"}} />
+                                <img src={require("../assets/images/jewellary/jw-12.jpg")} alt="" srcSet="" style={{width:"280px", borderRadius:"15px"}} />
                             </div>
                         </div>
                     </div>
